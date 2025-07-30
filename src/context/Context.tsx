@@ -29,6 +29,7 @@ export const DisplayContextProvider: React.FC<ContextProviderProps> = ({
 }) => {
   const [display, setDisplay] = useState(false);
   const [propertyList, setPropertyList] = useState<PropertyDetails[]>([]);
+ 
 
   useEffect(() => {
     async function fetchData() {
